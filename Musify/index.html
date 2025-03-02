@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musify</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Menu">
+        <div id="WelcomeText">
+            <div class="WelcomeMSF">
+                <p>Musify</p>
+            </div>
+            <br>
+        <div class="descText">
+            <div class="Selectfiletxt">
+                <p> Select a file and start listening </p>
+            </div>
+            <div class="favsongstxt">
+                <p>to your favourite songs</p>
+            </div>
+        </div>
+            <br>
+        </div>
+
+        <div>
+            <input type="file" id="audioFile" accept=".mp3, .wav" required>
+            <button id="fileButton" onclick="document.getElementById('audioFile').click();">Select File</button>
+        </div>
+        <br>
+        <div id="PlayButton">
+            <button id="PlayMusic" onclick="PlayMusic()">Play Music</button>
+        </div>
+        <br>
+        <div>
+            <audio id="audioPlayer" controls>
+                Your browser doesn't support this audio element.
+            </audio>
+        </div>
+    </div>
+
+    <script src="Play_music.js"></script>
+</body>
+
+</html>
